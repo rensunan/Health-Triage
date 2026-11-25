@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="c5VpSvu4v0dPkI7OyHjrPu">
+<head data-page-node-id="ae4rzD6HOEguc38sceH6He">
+<meta charset="UTF-8" data-page-node-id="47e58j9wro2EQKSRAIrGwK">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" data-page-node-id="swsfOJm9zSQjagCN5Slzbo">
+<title>健康决策树 · 3 分钟知道该怎么办</title>
+<meta name="description" content="分部位、分症状的健康自查工具。点几下，告诉你现在能做什么、要不要吃药、什么情况必须就医、大概多久好；另有疾病百科与 AI 问答。" data-page-node-id="GZflfeVKulfbKJTPJrFzBQ">
+<meta name="theme-color" content="#F6F7F9" data-page-node-id="qILayPzyCp83q4C3wvZWQd">
+<script>window.APP_BUILD = '20261106w';</script>
+<link rel="stylesheet" href="assets/style.css?v=20261106w" data-page-node-id="qIigwrDlemoDAEsQd1hRc8">
+</head>
+<body data-page-node-id="YG1Cb9GLIxcTwId6DOxh7c">
+
+<main id="app" data-page-node-id="vGLZFuBuiMnhTkDAu1sYTw">
+
+  <section class="screen is-active" id="s-home" data-page-node-id="KeGLIBBQDpw5C3SEfIBmQQ">
+    <div class="home-deco" aria-hidden="true" data-page-node-id="6UtgVmJ2pS8axQGF3phSQ0">
+      <span class="deco-glow g1" data-page-node-id="8KrJgguc902YaqBDiAGaEW"></span>
+      <span class="deco-glow g2" data-page-node-id="zdr1waAlubmDcc2Hxd9WiX"></span>
+      <span class="deco-glow g3" data-page-node-id="TSMhF2gWTObbGSpgWmLGKi"></span>
+      <svg class="sprig s1" viewBox="0 0 120 150" fill="none" data-page-node-id="MqfJwKd4LX0POKWniLgvaQ">
+        <path d="M80 148C66 116 54 84 48 44" stroke="#C3DFD4" stroke-width="2.2" stroke-linecap="round" data-page-node-id="pduJS3gfnE7EPRNbrVViyu"/>
+        <g fill="#CFE7DD" data-page-node-id="F2x6bz8gCWUj0s7agZ5GJu">
+          <ellipse cx="48" cy="44" rx="13" ry="6.5" transform="rotate(-58 48 44)" data-page-node-id="43bp0kcjAFNjAIO8cdnDfn"/>
+          <ellipse cx="56" cy="72" rx="14.5" ry="7" transform="rotate(-38 56 72)" data-page-node-id="pvPZlbAmhKEtPkEvKJdGYh"/>
+          <ellipse cx="74" cy="92" rx="14.5" ry="7" transform="rotate(20 74 92)" data-page-node-id="doW5zKHEIYyYcHNW9PpS9d"/>
+          <ellipse cx="60" cy="110" rx="13" ry="6.5" transform="rotate(-32 60 110)" data-page-node-id="8oaD7grMLGewrY1Q07Ik8N"/>
+          <ellipse cx="82" cy="126" rx="12.5" ry="6" transform="rotate(26 82 126)" data-page-node-id="ygpqHfMqLW4XQsLvTRUFX4"/>
+        </g>
+        <g fill="#B9DCCF" data-page-node-id="SMzDYshPA1bqiDVrbkA6pR">
+          <ellipse cx="40" cy="58" rx="10" ry="5" transform="rotate(-70 40 58)" data-page-node-id="JKyZZe9g49BufABcKm6kIk"/>
+          <ellipse cx="66" cy="82" rx="10" ry="5" transform="rotate(10 66 82)" data-page-node-id="8C8kFMrvthEU4xGyM8nBfD"/>
+        </g>
+      </svg>
+      <span class="pollen p1" data-page-node-id="AeVPrdp1c7AOG20D4wX0yb"></span>
+      <span class="pollen p2" data-page-node-id="XB8rJYIPh6ewnQ9EZZa4fO"></span>
+      <span class="pollen p3" data-page-node-id="LBR8FHLMbpQXcqcKL9hAOJ"></span>
+      <span class="pollen p4" data-page-node-id="cvwxfHo6qO4mLORTllUDig"></span>
+      <svg class="grass-strip" viewBox="0 0 400 60" preserveAspectRatio="none" data-page-node-id="IPrSYF3ypBnyE1ChzLZwgF">
+        <g fill="#DCEFE7" data-page-node-id="JAdZB0FXkGpaxD2bQdPQOB">
+          <ellipse cx="24" cy="64" rx="36" ry="22" data-page-node-id="NFSRvR4nFXKFXs0CmrpNd7"/>
+          <ellipse cx="82" cy="68" rx="42" ry="20" data-page-node-id="dYyMHYSybIPBpC4pOT2cmx"/>
+          <ellipse cx="140" cy="66" rx="34" ry="24" data-page-node-id="7qK6TvauvEDzMHMNFPogDv"/>
+          <ellipse cx="200" cy="70" rx="46" ry="21" data-page-node-id="YhEj9bm8l98mX5RNBYAqwJ"/>
+          <ellipse cx="262" cy="66" rx="38" ry="23" data-page-node-id="OdJVWyolo3zUW6kUqaNyXP"/>
+          <ellipse cx="320" cy="69" rx="44" ry="20" data-page-node-id="zWzNspiCTa5ofVDSImeYXR"/>
+          <ellipse cx="380" cy="65" rx="40" ry="23" data-page-node-id="C1wVCgiNaJOTGnpcrnYMGF"/>
+        </g>
+        <g fill="#CFE7DD" data-page-node-id="NPkf4kqk6daYrKSVHTiCpj">
+          <ellipse cx="52" cy="72" rx="28" ry="17" data-page-node-id="w2AqtHtAKgBDpScz6V3EPf"/>
+          <ellipse cx="170" cy="74" rx="30" ry="16" data-page-node-id="9R7j2IA7Cqbbgm2UcUoaIt"/>
+          <ellipse cx="290" cy="73" rx="32" ry="17" data-page-node-id="t6f7MqC1oWsTABXh3vTuxc"/>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap" data-page-node-id="18EirqnxYI5B9AgLTQVQ9S">
+      <header class="hero" data-page-node-id="XPWtU4GITNm47gkL85rAAH">
+        <div class="kicker" data-page-node-id="EzpXLUalDOGOVZHyX96sk3"><i class="dot" data-page-node-id="Os2GB0oiYv8Z5Gx7ENoWGe"></i>HEALTH TRIAGE</div>
+        <h1 data-page-node-id="DYWeyj9vicCImiO2jzmk1P">哪儿不舒服？</h1>
+        <p class="hero-sub" data-page-node-id="PRxnQ2xbMqg9TEemCvbJf4">点几下。<b data-page-node-id="thCyT7Cw3AVDytnLU7szPA">3 分钟</b>搞清楚三件事：现在能做什么、要不要吃药、什么情况必须去医院。</p>
+        <svg class="ecg" viewBox="0 0 320 40" preserveAspectRatio="none" aria-hidden="true" data-page-node-id="1PZv09M7P1rGTDtsB0tFp6">
+          <path class="ecg-line" vector-effect="non-scaling-stroke"
+            d="M0 22h38l7-10 8 20 7-27 7 17h20l5-7 6 14 5-7h28l7-10 8 20 7-27 7 17h20l5-7 6 14 5-7h64" data-page-node-id="gjunKIQT9SUjeqNfdjgWFu"/>
+          <path class="ecg-pulse" vector-effect="non-scaling-stroke"
+            d="M0 22h38l7-10 8 20 7-27 7 17h20l5-7 6 14 5-7h28l7-10 8 20 7-27 7 17h20l5-7 6 14 5-7h64" data-page-node-id="KkUmaA6UAQJu9c2xFvHort"/>
+        </svg>
+      </header>
+
+      <div id="module-list" data-page-node-id="uz3a2ZwNeOJEdsW02PmyLZ"></div>
+
+      <section class="history" id="history-box" hidden data-page-node-id="1rSdU4WJKr3F3xMCBATLAe">
+        <div class="sec-head" data-page-node-id="z2zdS6dvJXah6J0lf7bCWf"><span class="sec-name" data-page-node-id="HAtJdOF1UlktapjR1FlaL1">最近自查</span><button class="link" id="clear-history" data-page-node-id="H7CjFP9RH1LaZAH9yX8Jme">清空</button></div>
+        <div id="history-list" data-page-node-id="92b7kwzwDPX0c1FHJcTs4K"></div>
+      </section>
+
+      <p class="home-note" data-page-node-id="WT87D2h8EWJoMtdTpX7x1E"><b id="tree-count" data-page-node-id="EEvZqhs0YxLc3YBegRkSXZ">0</b> 个自查入口 · <b id="wiki-count" data-page-node-id="Vu5wibGoi9BC1dPQACLBSQ">0</b> 条疾病百科 · 全程点选，不用打字</p>
+    </div>
+  </section>
+
+  <section class="screen" id="s-mod" data-page-node-id="ejOqiGQLZCFk8eryCxWkbm">
+    <div class="wrap mod-page" data-page-node-id="eAe5EsNHgzdHo8hsMSaMNX">
+      <div class="quiz-top" data-page-node-id="B4OFe4TtCHYvXHXddC2yPC">
+        <button class="back" id="btn-back-mod" type="button" aria-label="返回首页" data-page-node-id="9ToOeyKRpfuFgPIAzguJ5P">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" data-page-node-id="8HzyQ3w9tdMpgAMDi17jTm"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="crnwyXsYlYbXVbmlpRYycM"/></svg>
+        </button>
+      </div>
+      <header class="mod-head" data-page-node-id="4X5WTqWtMLmnBgD4QuBY2i">
+        <span class="mod-glyph" id="mod-glyph" data-page-node-id="O1qs0ujDtGzsj6nktWs77V">动</span>
+        <div data-page-node-id="OMGWA7gXW5As78zpzW3mzp">
+          <h1 id="mod-title" data-page-node-id="GpUTSUpWxIVrDLUZ4SAAjJ"></h1>
+          <p id="mod-note" data-page-node-id="3AJRGXfnHsG8f62MILAiwP"></p>
+        </div>
+      </header>
+      <div id="mod-list" data-page-node-id="zDbNONxgMjCaO5SegAcV4t"></div>
+    </div>
+  </section>
+
+  <section class="screen" id="s-wiki" data-page-node-id="FfvfDhseJS2TolPUkRLRfR">
+    <div class="wrap wiki-page" data-page-node-id="oAzJbQHylAjJekLCfSevlO">
+      <div class="quiz-top" data-page-node-id="HCOdnHwGnpICl9hvCaYJ6X">
+        <button class="back" id="btn-back-wiki" type="button" aria-label="返回首页" data-page-node-id="rbiuSHFnusHAAMlKJAxX2j">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" data-page-node-id="AvulkiKlRDowrq3ofFpQXk"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="v8Est4kDekSyV8cdSmoX3q"/></svg>
+        </button>
+      </div>
+      <header class="mod-head" data-page-node-id="fPzxTAXJI5xh1aKEiZrh5F">
+        <span class="mod-glyph tone-wiki" data-page-node-id="kfiJTSfduceGqWVVnYwCj7">典</span>
+        <div data-page-node-id="UMt9Lo2SqabDFnGymdPqYt">
+          <h1 data-page-node-id="sNZ7jTgyBQfZgfHj8SNgPC">疾病百科</h1>
+          <p data-page-node-id="T1yaFZLr7eoY45WeU4Q2j1">按医院科室查，看点：这是什么 · 为什么会得 · 怎么处理</p>
+        </div>
+      </header>
+      <div class="dz-search" data-page-node-id="ku9V1XIfPFiBRhBUQTuqXY">
+        <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" data-page-node-id="DrTsndd2fkAP49HCpllufT"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8" data-page-node-id="ZIhlNBfHBKuawua6VV5UI6"/><path d="M16.5 16.5L21 21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" data-page-node-id="LOGFiiY1NZvonV2IsFmvS2"/></svg>
+        <input id="dz-q" type="search" placeholder="搜病名、别名或症状，如 渐冻症" autocomplete="off" data-page-node-id="idSwZuCbXRuN2cK1R2Oc99">
+      </div>
+      <div class="dept-tabs" id="dept-tabs" data-page-node-id="rAZ1QRZLqsALqccORoK80C"></div>
+      <div id="disease-list" data-page-node-id="gCDWuJmYIvcYHdS75c4c6j"></div>
+    </div>
+  </section>
+
+  <section class="screen" id="s-disease" data-page-node-id="nA3tkpSq507BXDFT6lv4kW">
+    <div class="wrap disease-page" data-page-node-id="Ta6uJviYS54XKAZqzov8Bh">
+      <div class="quiz-top" data-page-node-id="7Vf0YyJdGHrivkmbNBaIKI">
+        <button class="back" id="btn-back-dz" type="button" aria-label="返回" data-page-node-id="8qStEXoS18MEm9JxJ2HksP">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" data-page-node-id="DYwFe86cUTRAdBEG4jbQcf"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="aDCWZRYj0LdHS0TEtDvLUA"/></svg>
+        </button>
+        <div class="result-crumb" id="dz-crumb" data-page-node-id="CD5tysJrHfg3Avd0zAak2y"></div>
+      </div>
+      <div id="disease-body" data-page-node-id="pmTYFFuxXmw8hKR6XMWtCt"></div>
+    </div>
+  </section>
+
+  <section class="screen" id="s-ai" data-page-node-id="oWEhbMawlMIpif8Tbpx4ir">
+    <div class="wrap ai-page" data-page-node-id="ajkQxfkRtHIVugQXlyW9zB">
+      <div class="ai-top" data-page-node-id="Zv8ngXVND8UyiulMA1GatG">
+        <button class="back" id="btn-back-ai" type="button" aria-label="返回首页" data-page-node-id="3K26VncekHnDCyF0Jag2Qv">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" data-page-node-id="RmMDEQan9PEEo1OwHWpEo0"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="Y4y6TrydjgPeVHPZzLCKA0"/></svg>
+        </button>
+        <div class="ai-head" data-page-node-id="fQ4sxxysNGHRp67dPUrlQx">
+          <b data-page-node-id="5OVeRqDHx6MNdQdYoUJBHn">健康助手</b>
+          <span data-page-node-id="rzkZKUQtmcKc4iyhCIarmv">健康咨询 · 非诊疗 · 可发图片</span>
+        </div>
+        <button class="ai-user" id="ai-user" type="button" aria-label="账号信息" hidden>
+          <img class="ai-ava" id="ai-ava" alt="" width="28" height="28">
+          <span class="ai-mail" id="ai-mail"></span>
+        </button>
+        <button class="ai-icon" id="ai-history" type="button" aria-label="历史对话" hidden data-page-node-id="5fMPLXiTkonfLRA3PHahem">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" data-page-node-id="AtRaaZvJDXCuERpOWpQYTb"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7" data-page-node-id="TSHbs8EtI6V8wSLHR2pdtd"/><path d="M12 7.6V12l3 1.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" data-page-node-id="jxEzzhG8zdgABHhFbHXO9l"/></svg>
+        </button>
+        <button class="ai-icon" id="ai-reset" type="button" aria-label="新对话" data-page-node-id="9SN862Eq1cCoHvhibOuy56">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" data-page-node-id="LeN8FiyEC6VYcUAcfWR1Hh"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" data-page-node-id="fc5yaLFFMmUq6Fp2bmHsLf"/></svg>
+        </button>
+        <button class="ai-icon" id="ai-set" type="button" aria-label="设置">
+          <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><circle cx="12" cy="12" r="3.1" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.4v2.1M12 18.5v2.1M20.6 12h-2.1M5.5 12H3.4M18.1 5.9l-1.5 1.5M7.4 16.6l-1.5 1.5M18.1 18.1l-1.5-1.5M7.4 7.4L5.9 5.9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </button>
+        <button class="ai-login-btn" id="ai-login" type="button" data-page-node-id="Q5FQ2rQc9hU0xmFNwmDXvc">登录</button>
+      </div>
+
+      <div class="ai-user-menu" id="ai-user-menu" hidden>
+        <div class="aum-row">
+          <img class="aum-ava" id="aum-ava" alt="" width="40" height="40">
+          <div class="aum-txt">
+            <b id="aum-mail"></b>
+            <span>已登录 · 每天 20 次额度</span>
+          </div>
+        </div>
+        <button class="aum-item" id="aum-set" type="button">
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="3.1" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.4v2.1M12 18.5v2.1M20.6 12h-2.1M5.5 12H3.4M18.1 5.9l-1.5 1.5M7.4 16.6l-1.5 1.5M18.1 18.1l-1.5-1.5M7.4 7.4L5.9 5.9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span>设置</span>
+          <i class="aum-arrow">›</i>
+        </button>
+        <button class="aum-out" id="aum-out" type="button">退出登录</button>
+        <p class="aum-links">
+          <a href="#legal:privacy">隐私政策</a><i>·</i><a href="#legal:report">举报</a><i>·</i><button class="aum-del" id="aum-del" type="button">删除我的数据</button>
+        </p>
+      </div>
+
+      <div class="ai-ctx" id="ai-ctx" hidden>
+        <span class="ai-ctx-i" aria-hidden="true"></span>
+        <span class="ai-sel"><select id="prof-sex-sel" aria-label="性别"></select></span>
+        <span class="ai-sel"><select id="prof-age-sel" aria-label="年龄"></select></span>
+        <span class="ai-sel" id="prof-ctx-state" hidden><select id="prof-state-sel" aria-label="特殊情况"></select></span>
+      </div>
+
+      <div class="chat" id="chat" data-page-node-id="srdJDGZ2INwebLtND0L36W"></div>
+
+      <div class="ai-compose" data-page-node-id="KxhZgwAOHCbDeG6Ngl516x">
+        <div class="ai-chip" id="ai-chip" hidden data-page-node-id="jDV6jK3hn0YHHhWt9oLFng">
+          <img id="ai-chip-img" alt="待发送的图片" data-page-node-id="nFgAIFMfZ7HeWaiHV0JtTN">
+          <button type="button" id="ai-chip-del" aria-label="移除图片" data-page-node-id="JhD48fkHH8oGobN7xvBjVD">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" data-page-node-id="XaCULJlrkDPm5M5XJZD0eC"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" data-page-node-id="hA9si5bBPt9a2KImwy7R9f"/></svg>
+          </button>
+        </div>
+        <div class="ai-bar" data-page-node-id="bAjp7X9dlHbb3lgOsSZIjE">
+          <button class="ai-attach" id="ai-attach" type="button" aria-label="发送图片" data-page-node-id="M2wRZoVGTI9E5tWkXXnKQi">
+            <svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" data-page-node-id="lOAqZ5oegDPwGIfFJDJs0a"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.7" data-page-node-id="tOgCeqBtHeKqs7sbzp7jJf"/><circle cx="8.5" cy="10.5" r="1.6" fill="currentColor" data-page-node-id="Et7qmwOgSXRU87pfBFK1oy"/><path d="M4 17l5-4.5 3.5 3L16 12l4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" data-page-node-id="3fRuSVOjmD3YncSf49Hqc2"/></svg>
+          </button>
+          <textarea id="ai-input" rows="1" placeholder="描述症状，或发张照片……" autocomplete="off"></textarea>
+          <button class="ai-send" id="ai-send" type="button" data-page-node-id="SMDQlQvjPKqd9vvg4eDXBf">发送</button>
+        </div>
+        <p class="ai-foot" data-page-node-id="MDCHG36nVz8LvExTYnDUvV"><span class="ai-quota" id="ai-quota" data-page-node-id="pNNXlJlLLfjqen7EY2wG7u"></span><span data-page-node-id="0b6P9QDsfCNGr0XhNFKuLp">AI 建议仅供参考，不能替代医生面诊</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="s-auth" data-page-node-id="oiSJExNBcYgTBOVusFL39D">
+    <div class="wrap auth-page" data-page-node-id="DHYx09PN4LRj3BSqylVEj0">
+      <div class="quiz-top" data-page-node-id="W1aF64jYyArgYlEEFWDqwD">
+        <button class="back" id="btn-back-auth" type="button" aria-label="返回" data-page-node-id="kd1NKzOYG3fY55XKyfvQEy">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" data-page-node-id="uo3SmFGbEhb93vohvU8S5t"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="n4NlE7Zip73p456FM6kbAs"/></svg>
+        </button>
+      </div>
+      <div class="auth-head" data-page-node-id="EqmllYqZvLe0fZjF1E7HHs">
+        <h1 data-page-node-id="IgFhj4JwhpeT5BwJJLRzTN">登录或注册</h1>
+        <p data-page-node-id="ECT6acum53eMyTJ5Skb6RE">登录后 AI 对话会自动保存，换设备也能回看</p>
+      </div>
+      <div class="auth-tabs auth-ch" id="au-ch">
+        <button class="auth-tab on" type="button" data-ch="phone">手机号</button>
+        <button class="auth-tab" type="button" data-ch="email">邮箱</button>
+      </div>
+
+      <form id="au-phone-form" autocomplete="on" hidden>
+        <label class="af">
+          <span>手机号</span>
+          <input type="tel" id="au-phone" inputmode="numeric" maxlength="11"
+                 placeholder="11 位手机号" autocomplete="tel">
+        </label>
+        <label class="af">
+          <span>密码</span>
+          <input type="password" id="au-ppass" placeholder="至少 6 位，第一次用需要设置"
+                 autocomplete="current-password">
+        </label>
+        <div class="af">
+          <span>短信验证码</span>
+          <div class="af-row">
+            <input type="text" id="au-pcode" inputmode="numeric" maxlength="6"
+                   placeholder="6 位数字" autocomplete="one-time-code">
+            <button type="button" id="au-psend">获取验证码</button>
+          </div>
+        </div>
+        <p class="au-hint">设过密码就直接登录；第一次用请获取验证码，注册时会把这里填的密码设上。<b>忘了密码</b>直接用下面的验证码登录即可，不需要密码。</p>
+        <button type="submit" class="au-submit" id="au-psubmit">登录</button>
+        <button type="button" class="au-alt" id="au-pcodego">用验证码登录 / 注册</button>
+        <p class="au-err" id="au-perr"></p>
+      </form>
+
+      <div id="au-email-pane" hidden>
+        <div class="auth-tabs" id="au-tabs">
+          <button class="auth-tab on" type="button" data-tab="login">登录</button>
+          <button class="auth-tab" type="button" data-tab="signup">注册</button>
+        </div>
+        <form id="au-form" autocomplete="on">
+          <label class="af">
+            <span>邮箱（即登录账号）</span>
+            <input type="email" id="au-email" placeholder="you@example.com" autocomplete="email">
+          </label>
+          <div class="af" id="au-code-row" hidden>
+            <span>邮箱验证码</span>
+            <div class="af-row">
+              <input type="text" id="au-code" inputmode="numeric" maxlength="6"
+                     placeholder="6 位数字" autocomplete="one-time-code">
+              <button type="button" id="au-send">获取验证码</button>
+            </div>
+          </div>
+          <label class="af">
+            <span>密码</span>
+            <input type="password" id="au-pass" placeholder="至少 6 位" autocomplete="current-password">
+          </label>
+          <p class="au-hint" id="au-hint"></p>
+          <button type="submit" class="au-submit" id="au-submit">登录</button>
+          <p class="au-err" id="au-err"></p>
+          <button type="button" class="au-forgot" id="au-forgot">忘记密码？用邮箱验证码重设</button>
+        </form>
+
+        <form id="au-reset-form" hidden autocomplete="on">
+          <p class="au-hint">输入注册时用的邮箱，收验证码后直接设新密码，不用旧密码</p>
+          <label class="af">
+            <span>邮箱（即登录账号）</span>
+            <input type="email" id="au-remail" placeholder="you@example.com" autocomplete="email">
+          </label>
+          <div class="af">
+            <span>邮箱验证码</span>
+            <div class="af-row">
+              <input type="text" id="au-rcode" inputmode="numeric" maxlength="6"
+                     placeholder="6 位数字" autocomplete="one-time-code">
+              <button type="button" id="au-rsend">获取验证码</button>
+            </div>
+          </div>
+          <label class="af">
+            <span>新密码</span>
+            <input type="password" id="au-rpass" placeholder="至少 6 位" autocomplete="new-password">
+          </label>
+          <label class="af">
+            <span>确认新密码</span>
+            <input type="password" id="au-rpass2" placeholder="再输一次" autocomplete="new-password">
+          </label>
+          <button type="submit" class="au-submit" id="au-rsubmit">重置密码并登录</button>
+          <p class="au-err" id="au-rerr"></p>
+          <button type="button" class="au-alt" id="au-rback">返回登录</button>
+        </form>
+      </div>
+
+      <p class="auth-foot" data-page-node-id="6tRw9MxUgv4bL9bNeGGf35">手机号验证后会自动创建账号，也可以改用邮箱。对话内容只存在你的账号下，其他人看不到。</p>
+    </div>
+  </section>
+
+  <section class="screen" id="s-history" data-page-node-id="3sXzLWM3jDd2y6KmxZ23tb">
+    <div class="wrap hist-page" data-page-node-id="DK4FejbDQ9Orz4jC1zTYQm">
+      <div class="quiz-top" data-page-node-id="EjQFIlLwwqVLomgVDe10c2">
+        <button class="back" id="btn-back-hist" type="button" aria-label="返回" data-page-node-id="P8eP5A30qCIiUtmUAjeVWv">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" data-page-node-id="Bj0WZeviDIFgG1pAu1TEY1"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="XFtxkHlkNdMUYvybAN9xYP"/></svg>
+        </button>
+        <div class="ai-head" data-page-node-id="78zuW2lHdYUC9bJHtAt62c"><b data-page-node-id="wUwSjZVNscWBBm5OoMOGm8">历史对话</b><span data-page-node-id="ygr87XSbLOOL0BOq4TeKoJ">只显示你账号下的记录</span></div>
+        <button class="ai-reset" id="hist-new" type="button" data-page-node-id="TOuqaX9n6jtY3NIF08FqLA">新对话</button>
+      </div>
+      <div id="hist-list" class="hist-list" data-page-node-id="8YuagrLxM4FDCBBC9LooXm"></div>
+      <button class="hist-logout" id="hist-logout" type="button" data-page-node-id="rFCMK1dBtMRxAMFLK95lor">退出登录</button>
+    </div>
+  </section>
+
+  <section class="screen" id="s-quiz" data-page-node-id="mBuPEM8kTvUM8u88bnuy2v">
+    <div class="wrap quiz" data-page-node-id="M8sXhuXypUze0VVx0fFJJx">
+      <div class="quiz-top" data-page-node-id="eNkjfXCcxeNXILIaYxiYr5">
+        <button class="back" id="btn-back" type="button" aria-label="返回" data-page-node-id="0vRiuUKFzfclKqfnF456Z3">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" data-page-node-id="WGsnwt7fa0aoQpnbzULtmi"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="ld7VsrLSfgNyvcDiFanGUB"/></svg>
+        </button>
+        <div class="bar" data-page-node-id="27Zw6eOyPr2f5ZD7gBTeca"><i id="quiz-bar" data-page-node-id="ZOnwoRjTNg1riih85W8j98"></i></div>
+        <span class="quiz-step" id="quiz-step" data-page-node-id="wtpWtpQyxLFOv4CyZPlzKZ">1</span>
+      </div>
+
+      <div class="quiz-crumb" id="quiz-crumb" data-page-node-id="RpKCYllIT4XFqUBoDCXEdM">踝关节扭伤</div>
+      <span class="q-kind" id="q-kind" hidden data-page-node-id="bBCNsVmVwKWuEGYjE1ARPX">严重程度</span>
+      <h2 class="ask" id="q-ask" data-page-node-id="QS9WrbTJIhe5gFF0U5D9w3"></h2>
+      <p class="hint" id="q-hint" data-page-node-id="HyeZopESbsYempWvsuka7p"></p>
+      <div class="opts" id="q-opts" data-page-node-id="II0bEFTLrkmF4YKmtIpQLp"></div>
+      <button class="undo" id="btn-undo" type="button" hidden data-page-node-id="ksgaPv1ubcMuBDfNuaVjTy">← 回到上一题</button>
+    </div>
+  </section>
+
+  <section class="screen" id="s-result" data-page-node-id="3CnTSyjZLXjDg6YYOoNBoP">
+    <div class="wrap result" data-page-node-id="97YnENaer9EiRvx8QhuF8u">
+      <div class="result-top" data-page-node-id="IJl9EJGblCJJnl4Tg5iATu">
+        <button class="back" id="btn-back2" type="button" aria-label="返回" data-page-node-id="3hJTMeiRqrUnmyp3F4DN6f">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" data-page-node-id="H8VePkReS350MR3ysu9wmC"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" data-page-node-id="1B20MBUOrw1RB2LsYg5oCB"/></svg>
+        </button>
+        <div class="result-crumb" id="result-crumb" data-page-node-id="g3RSQsFvHI47KoimkMrYMO"></div>
+      </div>
+      <div id="result-body" data-page-node-id="SiBUOTC451gxWDpcdmDx4p"></div>
+      <div class="result-foot" data-page-node-id="HtAE6IiA2383g6jUhZRjhh">
+        <button class="btn-share" id="btn-share" type="button">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="M12 3v12M12 3l-4 4M12 3l4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 14v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          分享这份结果
+        </button>
+        <div class="foot-row">
+          <button class="btn-ghost" id="btn-again" type="button" data-page-node-id="AamwiwONusuzHCEkOuQ8i4">重新自查</button>
+          <button class="btn-solid" id="btn-home" type="button" data-page-node-id="nI51Kr1yqU46ASdt8ONexi">换个部位</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" id="s-legal">
+    <div class="wrap legal">
+      <div class="result-top">
+        <button class="back" id="btn-back-legal" type="button" aria-label="返回">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="result-crumb">用户协议 · 隐私政策 · 举报</div>
+      </div>
+
+      <h2 class="legal-h">用户协议</h2>
+      <p class="legal-meta">版本 v1.0 · 生效日期 2026-11-06</p>
+
+      <h3>一、这个工具是什么</h3>
+      <p>本工具是一个<b>健康科普与自我处置参考</b>工具：通过固定的问答规则给出「是否需要就医」的分级提示，并提供疾病百科与 AI 问答。</p>
+      <p><b>它不是医疗器械，也没有取得医疗器械注册证；它不提供诊疗服务，不能开具处方，不构成诊断结论。</b>依据国家药监局《人工智能医用软件产品分类界定指导原则》（2021 年第 47 号），其处理对象为用户自述的症状信息，而非医疗器械产生的数据。</p>
+      <p>任何结论都不能替代执业医师的面诊、检查与诊断。出现胸痛、呼吸困难、意识改变、大出血、突发剧烈头痛、一侧肢体无力、抽搐、高热伴颈硬等情况，请立即拨打 120 或前往急诊。</p>
+
+      <h3>二、使用规则</h3>
+      <p>1. 如实描述症状。故意提供虚假信息得到的结论没有参考价值。</p>
+      <p>2. 本工具面向 <b>14 周岁及以上</b>用户；未满 14 周岁须由监护人代为操作并同意。</p>
+      <p>3. 不得利用本工具从事违法活动，不得批量抓取、逆向调用接口、绕过使用次数限制。</p>
+      <p>4. 我们可能调整功能或停止服务，重大变更会在本页公告。</p>
+
+      <h3>三、责任限制</h3>
+      <p>在法律允许的范围内，因依赖本工具结论而造成的延误就诊、误用药等后果，由使用者自行承担。我们建议：任何持续超过三天的症状、任何加重的症状，都应当就医。</p>
+
+      <h2 class="legal-h" id="legal-privacy">隐私政策</h2>
+
+      <h3>四、我们收集哪些信息</h3>
+      <div class="legal-tb">
+        <div class="lr"><b>症状描述</b><span>你输入的文字、发送的图片。<b>属于敏感个人信息</b>（医疗健康）。</span></div>
+        <div class="lr"><b>人群信息</b><span>性别、年龄段、（可选）孕期/备孕/哺乳状态。<b>属于敏感个人信息</b>。</span></div>
+        <div class="lr"><b>账号信息</b><span>仅在你主动注册时收集：邮箱或手机号（二选一）。用于登录与找回账号。手机号仅用于发送登录验证码，不用于营销，也不提供给第三方；短信由云服务商按其隐私政策代为发送。</span></div>
+        <div class="lr"><b>对话记录</b><span>仅在登录状态下保存，用于你查看历史。</span></div>
+        <div class="lr"><b>设备信息</b><span>用于游客次数统计的设备特征哈希（不含原始指纹数据，无法反查个人）。</span></div>
+      </div>
+      <p>我们不收集：身份证号、精确位置、通讯录、通讯记录、银行卡信息。</p>
+
+      <h3>五、用途与法律依据</h3>
+      <p>症状与人群信息仅用于<b>生成本次自查结果与问答回答</b>，不会用于广告画像，不会出售或提供给第三方营销。</p>
+      <p>处理敏感个人信息的法律依据是<b>你的单独同意</b>（《个人信息保护法》第二十九条），我们在首次使用时单独征求，可随时撤回。</p>
+      <p>问答内容会发送给所接入的大模型服务以生成回复，这是提供服务所必需。对话不用于训练模型。</p>
+
+      <h3>六、保存期限</h3>
+      <p>游客的问答内容只存在于你的浏览器会话中，关闭即失效；登录用户的对话记录保存在云端，直到你删除或注销。</p>
+
+      <h3>七、你的权利</h3>
+      <div class="legal-tb">
+        <div class="lr"><b>查阅 / 复制</b><span>登录后可在「历史对话」查看全部记录。</span></div>
+        <div class="lr"><b>删除</b><span>账号菜单 →「删除我的数据」，立即清空云端对话与次数记录。</span></div>
+        <div class="lr"><b>撤回同意</b><span>退出登录后即回到游客状态；也可在账号菜单里删除数据。</span></div>
+        <div class="lr"><b>注销账号</b><span>删除数据后通过下方渠道联系我们，7 个工作日内注销账号本体。</span></div>
+      </div>
+
+      <h3>八、未成年人</h3>
+      <p>未满 14 周岁的用户，须由监护人阅读本政策并勾选同意后方可使用，监护人可随时要求删除其信息。</p>
+
+      <h3>九、AI 生成内容说明</h3>
+      <p>「健康助手」的回答由人工智能模型生成，<b>已在每条回答下标注</b>。模型可能产生不准确甚至错误的内容，请勿将其作为诊断或用药依据。我们已通过提示词限制其只能回答健康相关话题，并禁止输出具体用药剂量。</p>
+
+      <h2 class="legal-h" id="legal-report">投诉与举报</h2>
+      <p>如果你发现违法或有害内容、认为自己的个人信息权益受到侵害，或希望注销账号，可通过以下方式联系我们：</p>
+      <p class="legal-c">渠道：本应用的发布页反馈入口（分享链接所在页面的留言/反馈）<br>或发送邮件至 <b id="legal-mail">（待配置）</b></p>
+      <p><b>处理流程</b>：收到后 2 个工作日内确认受理 → 核查内容 → 采取删除、屏蔽或更正措施 → 反馈处理结果。<b>反馈时限：15 个工作日内。</b></p>
+      <p>对处理结果不满意，可向网信、卫生健康或市场监管部门投诉举报。</p>
+
+      <p class="legal-end">本页内容最后更新于 2026-11-06。继续使用即表示你已阅读并同意上述条款。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot" data-page-node-id="XTCwyX5pUyBUkDs8q3Eaz1">
+  <p data-page-node-id="6o8h5ffVuGP4YliI3yCbFM"><b data-page-node-id="PCuofLuWOB7tjxV87t3F6B">免责说明</b>：本工具<b>不是医疗器械，也不是诊疗行为</b>，只提供健康科普与自我处置参考，不构成诊断，不能替代医生面诊。AI 回答由模型生成，可能出错，请结合医生意见判断。出现意识改变、呼吸困难、剧烈疼痛、肢体畸形或症状持续加重，请立即就医。</p>
+  <p class="foot-meta" data-page-node-id="X34MpFDvIyTQz6fIjmhmod">依据：Ottawa 踝/膝关节规则 · PEACE &amp; LOVE（2020）· NICE 发热与脓毒症筛查要点 · 常见非处方药说明书</p>
+  <p class="foot-link">
+    <a href="#legal">用户协议</a><i>·</i><a href="#legal:privacy">隐私政策</a><i>·</i><a href="#legal:report">投诉与举报</a>
+  </p>
+</footer>
+
+<input type="file" id="ai-file" accept="image/*" hidden data-page-node-id="mS2wNP9AXjf4Ev1IdOwQOq">
+
+  <div class="img-mask" id="img-mask" hidden>
+    <div class="img-panel">
+      <div class="img-head">
+        <b>长图已生成</b>
+        <span>手机上长按图片可保存到相册</span>
+      </div>
+      <div class="img-body"><img id="img-out" alt="自查结果长图"></div>
+      <div class="img-foot">
+        <button class="img-btn" id="img-save" type="button">保存图片</button>
+        <button class="img-btn primary" id="img-share" type="button" hidden>分享到…</button>
+        <button class="img-btn plain" id="img-close" type="button">关闭</button>
+      </div>
+    </div>
+    <div class="img-full-tip" id="img-full-tip" hidden>长按图片 → 选「保存图片」</div>
+    <button class="img-full-x" id="img-full-x" type="button" aria-label="关闭" hidden>×</button>
+  </div>
+
+  <div class="sheet-mask" id="set-mask" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-label="设置">
+      <div class="sheet-h">设置</div>
+
+      <div id="set-acct" hidden>
+        <p class="set-lb">登录账号</p>
+        <div class="acct-row">
+          <span class="acct-id" id="acct-id">已登录</span>
+          <button class="acct-pw" id="acct-pw-open" type="button">修改密码</button>
+        </div>
+        <form class="pw-form" id="pw-form" hidden autocomplete="off">
+          <label class="af">
+            <span>当前密码</span>
+            <input type="password" id="pw-old" autocomplete="current-password" placeholder="现在登录用的密码">
+          </label>
+          <label class="af">
+            <span>新密码</span>
+            <input type="password" id="pw-new" autocomplete="new-password" placeholder="至少 6 位">
+          </label>
+          <label class="af">
+            <span>确认新密码</span>
+            <input type="password" id="pw-new2" autocomplete="new-password" placeholder="再输一次">
+          </label>
+          <p class="pw-err" id="pw-err"></p>
+          <button class="pw-go" id="pw-go" type="submit">保存新密码</button>
+          <p class="pw-hint" id="pw-hint">需要先验证当前密码；改完立即生效，下次登录用新密码。</p>
+        </form>
+        <hr class="set-hr">
+      </div>
+
+      <p class="sheet-q">回复内容与显示</p>
+
+      <p class="set-lb">回复里固定包含哪些块</p>
+      <div class="blk-list" id="blk-list"></div>
+
+      <p class="set-lb">字体大小</p>
+      <div class="sheet-row" id="set-fs"></div>
+
+      <p class="set-lb">背景颜色</p>
+      <div class="sheet-row" id="set-bg"></div>
+
+      <button class="blk-reset" id="set-reset" type="button">全部恢复默认</button>
+      <button class="sheet-go" id="set-close" type="button">完成</button>
+    </div>
+  </div>
+
+  <div class="sheet-mask" id="prof-mask" hidden>
+    <div class="sheet" role="dialog" aria-modal="true">
+      <div class="sheet-h">先确认是谁在问</div>
+      <p class="sheet-q">能不能用药、要不要就医，跟年龄和性别有关，先选一下</p>
+      <p class="prof-lb">性别</p>
+      <div class="sheet-row" id="prof-sex"></div>
+      <p class="prof-lb">年龄</p>
+      <div class="sheet-row prof-age" id="prof-age"></div>
+      <label class="ck prof-guard" id="prof-guard-wrap" hidden>
+        <input type="checkbox" id="prof-guard">
+        <span>我是其监护人，同意为这名未满 14 周岁的孩子使用本工具</span>
+      </label>
+      <div id="prof-state-wrap" hidden>
+        <p class="prof-lb">特殊情况（可不选）</p>
+        <div class="sheet-row" id="prof-state"></div>
+      </div>
+      <button class="sheet-go" id="prof-save" type="button" disabled>开始咨询</button>
+    </div>
+  </div>
+
+  <div class="sheet-mask" id="consent-mask" hidden>
+    <div class="sheet consent" role="dialog" aria-modal="true">
+      <div class="sheet-h">使用前请先了解</div>
+      <p class="sheet-q">这个工具不是医疗器械，也不是看病</p>
+      <div class="consent-body">
+        <p>它提供健康科普及自我处置参考，<b>不构成诊断，不能替代医生面诊</b>。AI 回答由模型生成，可能出错，请结合医生意见判断。</p>
+        <p>为了给出针对性建议，需要处理你填写的<b>性别、年龄段、症状描述和图片</b>，这些属于<b>敏感个人信息</b>。仅用于生成本次回答，不用于广告，不出售，不用于训练模型。</p>
+      </div>
+      <label class="ck"><input type="checkbox" id="ck-terms"><span>我已阅读并同意<a href="#legal">《用户协议》</a>和<a href="#legal:privacy">《隐私政策》</a></span></label>
+      <label class="ck"><input type="checkbox" id="ck-health"><span>我单独同意处理我的健康相关信息（可随时撤回）</span></label>
+      <button class="sheet-go" id="consent-ok" type="button" disabled>同意并开始使用</button>
+      <button class="consent-skip" id="consent-skip" type="button">不同意，仅浏览疾病百科</button>
+    </div>
+  </div>
+
+  <div class="sheet-mask" id="ask-mask" hidden>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="ask-q">
+      <div class="sheet-h">需要确认一下</div>
+      <p class="sheet-q" id="ask-q"></p>
+      <div class="sheet-opts" id="ask-opts"></div>
+      <button class="sheet-go" id="ask-go" type="button" hidden disabled>确认，看结论</button>
+      <button class="sheet-skip" id="ask-skip" type="button">先不选，直接看结论</button>
+    </div>
+  </div>
+
+<!-- 云 SDK：优先本地副本；失败由 assets/cloud.js 依次回退 CDN 并支持重试 -->
+<script src="assets/vendor/wb-cloud-sdk.js?v=20261106w"></script>
+<script>
+/* 记录脚本加载失败，供启动自检和诊断页使用 */
+window.__bootErr = [];
+window.addEventListener('error', function (e) {
+  var t = e && e.target;
+  if (t && t.tagName === 'SCRIPT') {
+    window.__bootErr.push(String(t.src || '').replace(/^https?:\/\/[^\/]+/, ''));
+  }
+}, true);
+</script>
+<script src="assets/cloud-config.js?v=20261106w"></script>
+<script src="assets/cloud.js?v=20261106w"></script>
+<script src="assets/quota.js?v=20261106w"></script>
+<script src="assets/auth.js?v=20261106w"></script>
+<script src="assets/chat-store.js?v=20261106w"></script>
+<script src="assets/ai.js?v=20261106w"></script>
+<script src="assets/trees/ankle.js?v=20261106w"></script>
+<script src="assets/trees/knee.js?v=20261106w"></script>
+<script src="assets/trees/shoulder.js?v=20261106w"></script>
+<script src="assets/trees/back.js?v=20261106w"></script>
+<script src="assets/trees/muscle.js?v=20261106w"></script>
+<script src="assets/trees/cold.js?v=20261106w"></script>
+<script src="assets/trees/gut.js?v=20261106w"></script>
+<script src="assets/trees/headache.js?v=20261106w"></script>
+<script src="assets/trees/toothache.js?v=20261106w"></script>
+<script src="assets/trees/allergy.js?v=20261106w"></script>
+<script src="assets/trees/urine.js?v=20261106w"></script>
+<script src="assets/trees/fever.js?v=20261106w"></script>
+<script src="assets/trees/throat.js?v=20261106w"></script>
+<script src="assets/trees/cough.js?v=20261106w"></script>
+<script src="assets/trees/rhinitis.js?v=20261106w"></script>
+<script src="assets/trees/diarrhea.js?v=20261106w"></script>
+<script src="assets/trees/stomach.js?v=20261106w"></script>
+<script src="assets/wiki/acute.js?v=20261106w"></script>
+<script src="assets/wiki/xinxueguan.js?v=20261106w"></script>
+<script src="assets/wiki/huxi.js?v=20261106w"></script>
+<script src="assets/wiki/xiaohua.js?v=20261106w"></script>
+<script src="assets/wiki/shenjing.js?v=20261106w"></script>
+<script src="assets/wiki/neifenmi.js?v=20261106w"></script>
+<script src="assets/wiki/shenneike.js?v=20261106w"></script>
+<script src="assets/wiki/xueye.js?v=20261106w"></script>
+<script src="assets/wiki/fengshi.js?v=20261106w"></script>
+<script src="assets/wiki/ganran.js?v=20261106w"></script>
+<script src="assets/wiki/waike.js?v=20261106w"></script>
+<script src="assets/wiki/guke.js?v=20261106w"></script>
+<script src="assets/wiki/shenwai.js?v=20261106w"></script>
+<script src="assets/wiki/miniao.js?v=20261106w"></script>
+<script src="assets/wiki/xiongwai.js?v=20261106w"></script>
+<script src="assets/wiki/fuchan.js?v=20261106w"></script>
+<script src="assets/wiki/erke.js?v=20261106w"></script>
+<script src="assets/wiki/pifu.js?v=20261106w"></script>
+<script src="assets/wiki/yanke.js?v=20261106w"></script>
+<script src="assets/wiki/erbi.js?v=20261106w"></script>
+<script src="assets/wiki/kouqiang.js?v=20261106w"></script>
+<script src="assets/wiki/jingshen.js?v=20261106w"></script>
+<script src="assets/wiki/neike.js?v=20261106w"></script>
+<script src="assets/wiki-link.js?v=20261106w"></script>
+<script src="assets/data.js?v=20261106w"></script>
+<script src="assets/share-card.js?v=20261106w"></script>
+<script src="assets/app.js?v=20261106w"></script>
+<script src="assets/mascot.js?v=20261106w"></script>
+</body>
+</html>
